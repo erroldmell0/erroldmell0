@@ -7,7 +7,7 @@
 
 <p align="center">
   <img 
-    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2dmbm1odm5kb3Q0c3IydjVrNWNpMXpsc3Bvd21vMDNweHR1dmxlNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GRPy8MKag9U1U88hzY/giphy.gif"
+    src="https://i.pinimg.com/originals/9f/0e/0e/9f0e0e7f7e6b6f9400f6165f24146b19.gif"
     width="140"
     alt="coding gif"
   />
@@ -16,7 +16,7 @@
 ---
 
 <h3 align="center">
-  DJSCE ’27 | ⭐⭐ CodeChef | Web Dev | I solve. I build. I learn.
+  DJSCE’27 | MERN Stack Developer | 2⭐ CodeChef | I Solve. I Build. I Learn.
 </h3>
 
 ---
@@ -32,7 +32,7 @@
 <h3 align="center">Tech Stack</h3>
 <p align="center">
   <img 
-    src="https://skillicons.dev/icons?i=java,python,c,html,css,js,react,tailwind,bootstrap,mysql,git,github,flask,pandas,numpy"
+    src="https://skillicons.dev/icons?i=java,python,c,html,css,js,react,nodejs,express,mongodb,tailwind,bootstrap,mysql,git,github"
   />
 </p>
 
