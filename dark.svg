@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="586" viewBox="0 0 1180 586">
+<defs>
+  <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#38BDF8">
+      <animate attributeName="stop-color" values="#38BDF8;#22D3EE;#60A5FA;#38BDF8" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#22D3EE">
+      <animate attributeName="stop-color" values="#22D3EE;#60A5FA;#38BDF8;#22D3EE" dur="8s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+  <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22C55E"/>
+    <stop offset="50%" stop-color="#10B981"/>
+    <stop offset="100%" stop-color="#34D399"/>
+  </linearGradient>
+  <radialGradient id="bgGlow" cx="30%" cy="20%" r="80%">
+    <stop offset="0%" stop-color="#0B1120"/>
+    <stop offset="100%" stop-color="#050816"/>
+  </radialGradient>
+  <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#22C55E" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#22C55E" stop-opacity="0.06"/>
+    <stop offset="50%" stop-color="#86EFAC" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#22C55E" stop-opacity="0.06"/>
+    <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#7DD3FC" opacity="0.05"/>
+  </pattern>
+
+  <style>
+    .ascii  { font-family: 'Courier New', Consolas, monospace; font-size: 7.4px; fill: url(#asciiGrad); letter-spacing: -0.2px; }
+    .key    { font-family: 'Courier New', Consolas, monospace; font-size: 14px; fill: #4ADE80; font-weight: bold; }
+    .value  { font-family: 'Courier New', Consolas, monospace; font-size: 14px; fill: #FFFFFF; font-weight: 500; }
+    .cc     { font-family: 'Courier New', Consolas, monospace; font-size: 14px; fill: #1E3A2F; }
+    .head   { font-family: 'Courier New', Consolas, monospace; font-size: 16px; fill: #22C55E; font-weight: bold; }
+    .accent { font-family: 'Courier New', Consolas, monospace; font-size: 14px; fill: #34D399; font-weight: bold; }
+    text, tspan { white-space: pre; }
+    .term-label { font-family: 'Courier New', Consolas, monospace; font-size: 12px; fill: #86EFAC; letter-spacing: 0.5px; opacity: 0.8; }
+    .scan-label { font-family: 'Courier New', Consolas, monospace; font-size: 10px; fill: #4ADE80; letter-spacing: 1px; }
+    .panel-title       { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #22C55E; letter-spacing: 2px; opacity: 0.85; }
+    .panel-title-blue  { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #38BDF8; letter-spacing: 2px; opacity: 0.85; }
+    .cursor-blink { fill: #22C55E; }
+  </style>
+</defs>
+
+<rect width="1180" height="586" rx="18" fill="url(#bgGlow)"/>
+<rect width="1180" height="586" rx="18" fill="url(#scanlines)"/>
+
+<g id="titlebar">
+  <rect x="3" y="3" width="1174" height="34" rx="16" fill="#0B1120" fill-opacity="0.85"/>
+  <circle cx="24" cy="20" r="5" fill="#EF4444"><animate attributeName="opacity" values="1;0.55;1" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="42" cy="20" r="5" fill="#F59E0B"><animate attributeName="opacity" values="1;0.55;1" dur="4s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="60" cy="20" r="5" fill="#10B981"><animate attributeName="opacity" values="1;0.55;1" dur="4s" begin="0.6s" repeatCount="indefinite"/></circle>
+  <text x="590" y="25" text-anchor="middle" class="term-label">errol@dmello ~ % whoami --verbose</text>
+  <circle cx="1070" cy="20" r="4" fill="#4ADE80">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1080" y="24" class="scan-label">ONLINE</text>
+</g>
+
+<g transform="translate(0,44)">
+  <rect x="14" y="18" width="488" height="490" rx="14" fill="#0B1120" fill-opacity="0.35" stroke="url(#borderGrad)" stroke-width="1" opacity="0.35"/>
+  <rect x="508" y="8" width="655" height="518" rx="14" fill="#0B1120" fill-opacity="0.35" stroke="url(#borderGrad)" stroke-width="1" opacity="0.35"/>
+  <text x="30" y="14" class="panel-title-blue">AVATAR.ASCII</text>
+  <text x="524" y="6" class="panel-title">PROFILE.INFO</text>
+
+  <g>
+  <text x="30" y="0" class="ascii">
+<tspan x="44.6" y="40.00" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                                                                                     </tspan>
+<tspan x="44.6" y="47.55" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                               .-+aoooooa***=-.                                      </tspan>
+<tspan x="44.6" y="55.10" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                             =osoa**++++++asneeoa*-.                                 </tspan>
+<tspan x="44.6" y="62.65" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                          .*oo+===+**a***+==assa**oes*-                              </tspan>
+<tspan x="44.6" y="70.20" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                        .*so+=+aossennnesso*+os*+=*eenesa-.                          </tspan>
+<tspan x="44.6" y="77.75" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                      .*sa=+asssssseeennnnnesoa===aneeeesosa-                        </tspan>
+<tspan x="44.6" y="85.30" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                     =so=+aseeeeeeesoa**+*aoseso*==sens+==*seo=.                     </tspan>
+<tspan x="44.6" y="92.85" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                    as+=*sennsa+-:.        ..:-+oo++sne==+=*senea:                   </tspan>
+<tspan x="44.6" y="100.40" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                  :sa=+oenea-.                ...=***oeo===seeeeoeo:                 </tspan>
+<tspan x="44.6" y="107.95" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                 -n*-*sne+.                    ..  -++ae*==sneno=+em*                </tspan>
+<tspan x="44.6" y="115.50" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                :n*=*sno.                        ...:=++*==snns+**+*ne-              </tspan>
+<tspan x="44.6" y="123.05" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">               .n*=aen*                            .::++=+oeeno++as*+sm*             </tspan>
+<tspan x="44.6" y="130.60" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">               ea-aena                              .::asseeee*++*nsa=*ms            </tspan>
+<tspan x="44.6" y="138.15" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">              oe-asno                             .  .:-seees*=+=anso*=+ss.          </tspan>
+<tspan x="44.6" y="145.70" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">             +m=+ens.                      -ao=..... .::+oaa+====oeso*=+aen=         </tspan>
+<tspan x="44.6" y="153.25" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">            .ma=seme.                   .:s%sm@m:.::..::-+==+==+seeso==*esem*        </tspan>
+<tspan x="44.6" y="160.80" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">      :-=***so-oes#@+                   .+@@%%@#:     .:-=+=+=*eeesa===*eesam*       </tspan>
+<tspan x="44.6" y="168.35" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">   .e#8@@@@@@%#%#m#@*              .=aoen#88@@@%mnesoa+-::=+=*essa+====*sea=am+      </tspan>
+<tspan x="44.6" y="175.90" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">   *@@@@@@@@@@@@@@@@%n*        .+s#8@@@@@@@@@@@@@@@@@@@%mo**=aeo+=+a===+oes++an:     </tspan>
+<tspan x="44.6" y="183.45" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">   -8@@@@@@@@@@@@@@@@@@#nm#mnss%@@@@@@@@@@8888888@@@@@@@@@@#+*ee*=oe+===ases*+os     </tspan>
+<tspan x="44.6" y="191.00" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">    o@@@@@@@@@@@@@@@88@@@@@@@@@@@@@@@@@@@@@@@88888@@@%m%@@@@a=sne*se*===*sses*=s*    </tspan>
+<tspan x="44.6" y="198.55" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">    .#@@@88@@@@@@@@@@8@@ma**e@@@8@@@@@@@@@@@@@@888@@8:.:-*sna++seeee*===*eoees+*n.   </tspan>
+<tspan x="44.6" y="206.10" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">     a@@@8888@@@@@@@@8@#.    o@@@@@@@@@@@@@@@@@88@@@+.::::.:**=*eeee*===*nooseo=ea   </tspan>
+<tspan x="44.6" y="213.65" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">     .#@@@888@@@@@@@@@@=     .%@@@@@@@@@@@@@@@@8@@@a .  .:-=o++=ones+===ona+oee*an.  </tspan>
+<tspan x="44.6" y="221.20" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">      +8@@888@@@@@@@@@a     .:+@@@@@@@@@@@@@@@@@@@s      .:-es*=+ees===oeeo=*esa+n*  </tspan>
+<tspan x="44.6" y="228.75" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">       a@@@888@@@@@@@n+   :-+a=+@@8@@@@@@@@@@@@@@o        :-ens+=ana=+sneeo=+eea+es  </tspan>
+<tspan x="44.6" y="236.30" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">        *%@@@@@@@@@%a=a+=+**+++ +8@@@@@@@@@@@@@%+         .-eeea=+o+=oneeea=oeo++on  </tspan>
+<tspan x="44.6" y="243.85" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">         :s%8@@@8mo-+=+*++++++*: :s8@@@@@@@@@%a           .-eeeo=++=anenee**o*===*e. </tspan>
+<tspan x="44.6" y="251.40" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">           .eoan*  **==-=+++*+a-.  .+osnesoa=              =nee*===oeeeneo=+===+**e. </tspan>
+<tspan x="44.6" y="258.95" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">            oo-a- **==-==+a**+*+.                          -ns*=+aeneeens*==+aoesoe. </tspan>
+<tspan x="44.6" y="266.50" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">            +s=+-**=--++s##a+++a-                          =a+*snnneo*neo==*seenssn. </tspan>
+<tspan x="44.6" y="274.05" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">            :e+*a*==-=++sea*+++**:                        :*+onneeo+-ons*=aeeeesass  </tspan>
+<tspan x="44.6" y="281.60" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">             ea*+==--=**++++++++*a-                       -*sneen*==+nno=*eeee*++e+  </tspan>
+<tspan x="44.6" y="289.15" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">           -so+======+++**++++++++aa=:                    +aeeena-==sme*=oeee*=*ae.  </tspan>
+<tspan x="44.6" y="296.70" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">         :ae*=====---=+++++++++++*aase-                  -**ennno++smna=+eens=*+n*   </tspan>
+<tspan x="44.6" y="304.25" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">       -oea+=====--==++++++++++****ooa.           .     :a*+aennesenno+=*eens++on.   </tspan>
+<tspan x="44.6" y="311.80" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">     -sea=======--==+++++++++****oooo= .    .     .    :ee*+++oseenns+=++eneea+n-    </tspan>
+<tspan x="44.6" y="319.35" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">   =oea=--======---==++++=+***assoa+--:::::...   .    .snno+====onns+==+=aneesn+     </tspan>
+<tspan x="44.6" y="326.90" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> .ss*=----====-----=**+++*a**ooa+--::....:..... .     anees+==+oeno+==*+=+aeema      </tspan>
+<tspan x="44.6" y="334.45" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> oa===---===-===+++*+++*a**so=:-:::............      +esses+=+sneo+=+os++*+*na       </tspan>
+<tspan x="44.6" y="342.00" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">.e+++=====++=++====+*aooosnmns*----::...........    +*sess*=aenea==*sea+*+om*        </tspan>
+<tspan x="44.6" y="349.55" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve"> ano*+++==++=---=*aaaaaasmmnnmms------:........ .  +*oeeo++snns*+osses*++sm+         </tspan>
+<tspan x="44.6" y="357.10" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">  -sneoooseeseeeeeeesa-*semneneno---::::...... ...*oensa+aenneaaseeeo*+*nn:          </tspan>
+<tspan x="44.6" y="364.65" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">    =asooa+=--==-:.s#na+osemesnme---::........:.-ennea*aemnsoeeeeeeo++s#a            </tspan>
+<tspan x="44.6" y="372.20" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                   .nnne*+*sneemn----:.....::::=oso*=aemmea+=*ooa**a*ee-             </tspan>
+<tspan x="44.6" y="379.75" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                    -monmo==onnnn*---:...::::-*a=-=aemnea=-=+++*aoo++#.              </tspan>
+<tspan x="44.6" y="387.30" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                     *m+sme*=aeen*:--:::::::*a+=*on#mea==*aoseenno- :#=              </tspan>
+<tspan x="44.6" y="394.85" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                      am*oens**sn*-::--:::=**+aemmnsa++oennnnns*-.   #a              </tspan>
+<tspan x="44.6" y="402.40" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                       *mnsseessnoasooa+:+*asm#meo*==annnnesa+:...   sn              </tspan>
+<tspan x="44.6" y="409.95" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                        .a#eeenma-ema+=eesnmmnsa**aa*anneo+-:.....   =%:             </tspan>
+<tspan x="44.6" y="417.50" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                        -smeesnn+o#o==enemmeesennnnes***=:... . ..    ms             </tspan>
+<tspan x="44.6" y="425.05" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                      :o#nsssnms*e#o:o%s+*assesoa*=-:.. ....  .. .    a#.            </tspan>
+<tspan x="44.6" y="432.60" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                     *mnssse#mesos#s=snmna**=::.........   .  .. ..   .#a            </tspan>
+<tspan x="44.6" y="440.15" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                    oma*+anmeosea*smessn#s+**=.::. . .     .. .. ...   +#=           </tspan>
+<tspan x="44.6" y="447.70" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                  .em*==*nmeoaen=.-:*oasnm++ae=.:  ...  ..    .. ....   *m-          </tspan>
+<tspan x="44.6" y="455.25" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                 .emne=+nmso**ee---:=*++s#o=aee-:....   .     .. .  .  . om.         </tspan>
+<tspan x="44.6" y="462.80" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                .neene++eesa=+ea:--:+*==*ea=oeeo:...           . .      ..sn.        </tspan>
+<tspan x="44.6" y="470.35" textLength="415.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">                ononne+*soa+=+o-::-:+*+*+=*+anee+:..                     ..en.       </tspan>
+  </text>
+  </g>
+
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="42.0" class="head">errol@dmello</tspan><tspan class="cc"> -————————————————————————————————————————————-—-</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="66.0" class="cc">. </tspan><tspan class="key">Name</tspan><tspan class="cc">: ................... </tspan><tspan class="value">Errol D’mello</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="85.0" class="cc">. </tspan><tspan class="key">Role</tspan><tspan class="cc">: ................... </tspan><tspan class="value">Computer Engineering Student</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="104.0" class="cc">. </tspan><tspan class="key">Tagline</tspan><tspan class="cc">: ................ </tspan><tspan class="value">I Solve. I Build. I Learn.</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="123.0" class="cc">. </tspan><tspan class="key">Problems</tspan><tspan class="cc">: ............... </tspan><tspan class="value">600+ DSA problems solved</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="142.0" class="cc">. </tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="161.0" class="accent">- College</tspan><tspan class="cc"> -————————————————————————————————————————————-—-</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="180.0" class="cc">. </tspan><tspan class="key">Institute</tspan><tspan class="cc">: .............. </tspan><tspan class="value">Dwarkadas J. Sanghvi College of Engineering</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="199.0" class="cc">. </tspan><tspan class="key">Degree</tspan><tspan class="cc">: ................. </tspan><tspan class="value">B.Tech Computer Engg. + Honours in DS</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="218.0" class="cc">. </tspan><tspan class="key">CGPA</tspan><tspan class="cc">: ................... </tspan><tspan class="value">9.25  (Aug 2023 – Present)</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="237.0" class="cc">. </tspan><tspan class="key">Location</tspan><tspan class="cc">: ............... </tspan><tspan class="value">Mumbai, Maharashtra, India</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="256.0" class="cc">. </tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="275.0" class="accent">- Tech Stack</tspan><tspan class="cc"> -————————————————————————————————————————————-—-</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="294.0" class="cc">. </tspan><tspan class="key">Languages</tspan><tspan class="cc">: .............. </tspan><tspan class="value">Java, Python, JavaScript, C</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="313.0" class="cc">. </tspan><tspan class="key">Frontend</tspan><tspan class="cc">: ............... </tspan><tspan class="value">React.js, HTML, CSS, Tailwind, Bootstrap</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="332.0" class="cc">. </tspan><tspan class="key">Backend</tspan><tspan class="cc">: ................ </tspan><tspan class="value">Node.js, Express.js</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="351.0" class="cc">. </tspan><tspan class="key">Databases</tspan><tspan class="cc">: .............. </tspan><tspan class="value">MongoDB, Mongoose, MySQL</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="370.0" class="cc">. </tspan><tspan class="key">Tools</tspan><tspan class="cc">: .................. </tspan><tspan class="value">Git, GitHub, Postman</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="389.0" class="cc">. </tspan><tspan class="key">Concepts</tspan><tspan class="cc">: ............... </tspan><tspan class="value">DSA, OOP, Machine Learning</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="408.0" class="cc">. </tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="427.0" class="accent">- Connect</tspan><tspan class="cc"> -————————————————————————————————————————————-—-</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="446.0" class="cc">. </tspan><tspan class="key">Email</tspan><tspan class="cc">: .................. </tspan><tspan class="value">erroldmello2005@gmail.com</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="465.0" class="cc">. </tspan><tspan class="key">Portfolio</tspan><tspan class="cc">: .............. </tspan><tspan class="value">errol-dmello.vercel.app</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="484.0" class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: ............... </tspan><tspan class="value">linkedin.com/in/errol-dmell0</tspan></text></g>
+  <g><text x="520" y="0" fill="#FFFFFF"><tspan x="520" y="503.0" class="cc">. </tspan><tspan class="key">GitHub</tspan><tspan class="cc">: ................. </tspan><tspan class="value">github.com/erroldmell0</tspan></text></g>
+
+  <rect x="948.4" y="491.0" width="8.4" height="14" class="cursor-blink" opacity="0.9"/>
+</g>
+
+<rect x="0" y="-70" width="1180" height="70" fill="url(#scanGrad)" opacity="0.7" style="mix-blend-mode:screen">
+  <animateTransform attributeName="transform" type="translate" from="0 -70" to="0 630" dur="4.2s" repeatCount="indefinite"/>
+</rect>
+<rect x="3" y="3" width="1174" height="580" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="2" opacity="0.8">
+  <animate attributeName="opacity" values="0.5;0.95;0.5" dur="3.2s" repeatCount="indefinite"/>
+</rect>
+</svg>
